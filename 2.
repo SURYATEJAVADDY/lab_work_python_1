@@ -1,0 +1,17 @@
+# On a chessboard, positions are marked with letters between a and h for the column and a
+# number between 1 and 8 for the row. 
+
+# Give a 2 character input string with a letter (a-h) and a number (1-8), print "Corner" if the 
+# value indicates a square on a corner. Print "Border" if the value indicates a square on an 
+# edge of the board. Otherwise, print "Inside".
+
+inputStr = 'a1' 
+cor = ['a1', 'a8', 'h1', 'h8']
+bor = ['a2','a3','a4','a5','a6','a7','h2','h3','h4','h5','h6','h7','b1','b8','c1','c8','d1','d8','e1','e8','f1','f8','g1','g8']
+
+if(inputStr in cor):
+   print("CORNER")
+elif(inputStr in bor):
+   print("BORDER")
+else:
+   print("INSIDE")
