@@ -1,0 +1,15 @@
+# Given three integers x, y, z, print the sum of the odd integers.
+
+x = 2 
+y = 1 
+z = 3 
+if x%2==0 and y%2==0 and z%2==0:
+   print(int("0"))
+elif x%2!=0 and y%2!=0 and z%2==0:
+   print(x+y)
+elif x%2==0 and y%2!=0 and z%2!=0:
+   print(y+z)
+elif x%2!=0 and y%2==0 and z%2!=0:
+   print(x+z)
+else:
+   print(x+y+z)
