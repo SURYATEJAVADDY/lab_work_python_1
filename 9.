@@ -1,0 +1,18 @@
+# Given three input strings, print all but the shortest one, in the order given,
+# separated by a space. If all three string lengths are equal, print "All Equal".
+
+s1 = 'hi' 
+s2 = 'hello' 
+s3 = 'morning' 
+# Your code here...
+a=len(s1)
+b=len(s2)
+c=len(s3)
+if a>b>c or b>a>c:
+   print(s1, s2)
+elif a>c>b or c>a>b:
+   print(s1, s3)
+elif b>c>a or c>b>a:
+   print(s2, s3)
+elif a==b==c:
+   print("All Equal")
